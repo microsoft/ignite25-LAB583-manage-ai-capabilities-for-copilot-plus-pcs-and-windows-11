@@ -1,26 +1,36 @@
 
 
-These instructions are for participants of the **instructor-led** Workshop "SESSIONNAME" at Microsoft AI Tour 2026.  Register to attend in a city near you at [Microsoft AI Tour](https://aitour.microsoft.com/).
+These instructions are for participants of the **instructor-led** Workshop "LAB583 - Manage AI Capabilities for Copilot+ PCs and Windows 11" at Microsoft Ignite 2025. 
 
 ## Lab Overview
 
-In this hands-on workshop, you’ll learn to ....
+In this lab you will gain hands-on experience with enabling and managing AI experiences for Windows. 
+You will explore the customizations available to users and the controls available to IT admins. 
+You will learn how to use Microsoft Intune to fine-tune popular features like Recall, Copilot, Click to Do, and Image Creator. 
+You will also walk through managing privacy and compliance, and end user readiness.
 
-If you're not a workshop participant at AI Tour, try this code yourself at ....
 
 ## Pre-Requisites
 
-To participate in this workshop, you will need:
+To participate in this lab, you will need:
 
-1. Your own laptop.
-   * It need only be capable of running a browser and GitHub Codespaces, so almost any laptop will do.
-   * A recent version of Edge, Chrome or Safari is recommended.
-2. Prerequisite #2
-3. Prerequisite #3
+1. A Copilot+ PC
+2. Lab credentials to log into the Copilot+ PC
+3. Access to an Intune tenant
+4. <OTHERS?>
 
-## Get Started
+## Exercise One: Meet your Copilot+ PC
 
-To get started you will need to
+<b>Objective</b>: Understand the Copilot+ PC out of box experience
+
+1. Log into your lab device with your lab credentials.
+2. Launch the <b>Settings</b> application.
+3. Navigate to <b>System</b>
+4. Scroll down to <b>AI Components</b> and click on <b>AI Components</b>
+   1. On Windows 11 24H2, by default all AI Components are set to a disabled state
+   2. On Windows 11 25H2, some AI features are enabled by default: <i>Agentic search experience in Settings, Improved Windows Search, and Click to Do</i>
+5. You will see the following AI Components installed locally
+6. 
 
 ## Discussions
 
