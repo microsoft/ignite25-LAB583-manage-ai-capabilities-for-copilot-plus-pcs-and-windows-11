@@ -27,20 +27,20 @@ To participate in this lab, you will need:
 2. Navigate to <b>System</b>
 3. Scroll down to <b>AI Components</b> and click on <b>AI Components</b>
 
-<img src="../../img/Exercise1-Settings-AI Components.png" alt="Agentic search experience in Settings" width="600" />
+<img src="/img/Exercise1-Settings-AI Components.png" alt="Agentic search experience in Settings" width="600" />
 
 
 > Note: On Windows 11 24H2, by default all AI Components are set to a disabled state. On Windows 11 25H2, some AI features are enabled by default: <i>Agentic search experience in Settings, Improved Windows Search, and Click to Do</i>
 
 4. You will see the following AI Components installed locally:
  
-<img src="../../img/Exercise1-System-AIComponents.jpg" alt="Installed AI Components" width="600" />
+<img src="/img/Exercise1-System-AIComponents.jpg" alt="Installed AI Components" width="600" />
 
 ##### Explore Agentic Search Experience in Settings
 
 In the Settings app, you will see the search experience is now AI-enabled through the visual cue next to the magnifier.
 
-<img src="../../img/Exercise1-AgenticSearch-Settings.jpg" alt="Agentic Search in Settings" width="600" />
+<img src="/img/Exercise1-AgenticSearch-Settings.jpg" alt="Agentic Search in Settings" width="600" />
 
 End users can now search for settings using a natural language query as opposed to needing to know precisely which section in Settings they need to be in, or how the Setting is named. Try the following examples to see the types of natural language searches Settings can now handle.
 
@@ -55,7 +55,7 @@ End users can now search for settings using a natural language query as opposed 
 
 In the Windows Search Bar, you will see the Windows search experience is now AI-enabled through the visual cue next to the magnifier as shown below:
 
-<img src="../../img/Exercise1-ImprovedWindowsSearch.png" alt="Improved Windows Search" width="100" />
+<img src="/img/Exercise1-ImprovedWindowsSearch.png" alt="Improved Windows Search" width="100" />
 
 Improved Windows Search provides end users with the ability to perform searches that extend beyond just file and folder names. Windows can leverage on-device AI to understand the file contents as well, including image recognition.
 
@@ -69,13 +69,13 @@ Click To Do is a new AI-powered feature that enables users to take contextual ac
 1. Launch the Settings application.
 2. In the Search bar, type in "How do I turn on click to do", wait for the results and then hit enter. You will be taken to <b>Privacy & security > Click to Do</b>
 
-<img src="../../img/Exercise1-ClickToDo-Settings.jpg" alt="Click to Do Settings in Privacy and Security" width="600" />
+<img src="/img/Exercise1-ClickToDo-Settings.jpg" alt="Click to Do Settings in Privacy and Security" width="600" />
 
 3. As you can see, on Windows 11 25H2, Click to Do is enabled by default, but can be disabled via Intune policy.
 4. Launch Click to Do by pressing <b>Windows key + Q</b> together
 5. The first time a user launches Click to Do, they are presented with an interactive tutorial.
 
-<img src="../../img/Exercise1-ClickToDo-TutorialStart.jpg" alt="Click to Do Tutorial" width="400" />
+<img src="/img/Exercise1-ClickToDo-TutorialStart.jpg" alt="Click to Do Tutorial" width="400" />
 
 6. <b>Complete</b> the Click to Do tutorial
 7. Now let's use Click to Do with documents and images on your Copilot+ PC
