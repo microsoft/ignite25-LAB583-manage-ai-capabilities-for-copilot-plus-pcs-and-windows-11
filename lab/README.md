@@ -110,9 +110,9 @@ There are user controls (and Admin controls that you will explore later) to mana
 
 * Note that users can now Reset Recall through a single button. If we were in the European Economic Area, there would also be an option for the end user to export Recall data.
 * When running, Recall will appear in the lower-right corner of the task bar.
-* To ensure that some snapshots have been taken, <b>navigate</b> through the <b>Settings<b> app onto a few screens, launch <b>Notepad</b> and <b>type</b> in a short phrase and then close Notepad, or perform some other actions on the device.
+* To ensure that some snapshots have been taken, <b>navigate</b> through the <b>Settings</b> app onto a few screens, launch <b>Notepad</b> and <b>type</b> in a short phrase and then close Notepad, or perform some other actions on the device.
 
-<img src="/img/Exercise1-Recall-Icon-Taskbar.jpg" alt="Recall Taskbar Icon" width="200" />
+<img src="/img/Exercise1-Recall-Icon-TaskBar.jpg" alt="Recall Taskbar Icon" width="200" />
 
 6. Click on the Recall icon to open it.
 7. Recall now opens to a "Home" view that shows most frequently accessed applications and websites. We are just starting this lab, so you will not have many snapshots to look through.
@@ -133,4 +133,45 @@ There are user controls (and Admin controls that you will explore later) to mana
 
 <img src="/img/Exercise1-Recall-DeleteSnapshot.jpg" alt="Recall Delete Snapshot Option" width="200" />
 
-18. steps here
+18. Close the Recall window. The Recall icon should persist in the task bar. If you click on it, you can see you have the option to Pause snapshots. Leave Recall running for now, as you will be able to use your snapshot history later in this lab to search for actions you have performed.
+
+## Exercise Two: Configure AI Policies in Intune
+
+<b>Objective</b>: Gain hands on experience configuring commercial controls for Copilot+ PC AI Features
+
+NOTE TO SELF - MAKE SURE USERS HAVE ACCESS TO INTUNE. ALSO MAY NEED TO REVISE THE POLICY INSTRUCTIONS AS MORE THINGS MOVE INTO SETTINGS CATALOG IN OCT/NOV
+
+* Launch the Edge browser
+* Navigate to intune.microsoft.com
+* Authenticate with your lab credentials
+* When creating policies, name your policies <i>lastname_firstname</i>_PolicyName to distinguish from other attendees
+
+IF THIS IS A SHARED M365 TENANT, BE SURE TO EXPLAIN USERS SHOULD CREATE INDIVIDUAL POLICIES BUT WILL NOT BE ASSIGNING POLICIES
+
+### Create Recall Policy using the Settings Catalog
+
+Objective: Build an Intune policy that enables the use of Recall, but block capturing snapshots from your Contoso HR site and a customer relationship application. You want to limit the snapshot storage space to 10 GB on devices, and set a limit of XX days to retain snapshots. You want to enable your European Economic Area (EEA) users to be able to export their snapshot data. 
+
+1. In the Intune console, navigate to <i>Devices</i>. Under <i>Manage devices</i>, select <b>Configuration</b>
+2. Select <b>Create > New Policy</b>
+   1. Platform: <b>Windows 10 and later</b>
+   2. Profile type: <b>Settings catalog</b>
+   3. Click <b>Create</b>
+3. The Create profile wizard starts
+4. On the <i>Basics</i> page, enter the following information
+   1. Name: <i>lastname_firstname</i><b>_Enable Copilot+ PC AI Features</b>
+   2. Description: <b>Enable AI features</b>
+5. On the <i>Configuration settings</i> page, click the <b>+Add settings</b> option to open the Settings picker
+   1. In the <i>Browse by category</i> list, scroll down to <b>Windows AI</b> and click <b>Windows AI</b>
+   2. The Windows AI settings appear. Select the following settings:
+      1. Allow Recall Enablement
+      2. Allow Recall Export (Windows Insiders only)
+      3. Disable AI Data Analysis
+      4. Disable Click To Do
+      5. Set Deny App List For Recall
+      6. Set Deny Uri List For Recall
+      7. Set Maximum Storage Duration For Recall Snapshots
+      8. Set Maximum Storage Space for Recall Snapshots
+   3. The selected settings will appear in the left side of your Configuration Settings screen. You will now configure the settings as follows to meet your policy objectives.
+      1. Set Maximum Storage Space for Recall Snapshots: Use the drop-down menu to select <b>10 GB</b>
+      2. Set Maximum Storage Duration for Recall Snapshots: Use the drop-down menu to select <b>60 days</b>
