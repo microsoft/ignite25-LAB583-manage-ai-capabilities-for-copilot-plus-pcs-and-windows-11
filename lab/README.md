@@ -148,7 +148,7 @@ NOTE TO SELF - MAKE SURE USERS HAVE ACCESS TO INTUNE. ALSO MAY NEED TO REVISE TH
 
 IF THIS IS A SHARED M365 TENANT, BE SURE TO EXPLAIN USERS SHOULD CREATE INDIVIDUAL POLICIES BUT WILL NOT BE ASSIGNING POLICIES
 
-### Create Recall Policy using the Settings Catalog
+### Create Recall and Click to Do Policy using the Settings Catalog
 
 Objective: Build an Intune policy that enables the use of Recall, but block capturing snapshots from your Contoso internal employee sites and two different customer relationship applications that contain customer data. You need to limit the snapshot storage space to 10 GB on devices, and set a limit of XX days to retain snapshots. You need to enable your European Economic Area (EEA) users to be able to export their snapshot data. 
 
@@ -179,6 +179,7 @@ Objective: Build an Intune policy that enables the use of Recall, but block capt
 12. On the <i>Basics</i> page, enter the following information
    1. Name: <i>lastname_firstname</i><b>_Enable Copilot+ PC AI Features</b>
    2. Description: <b>Enable AI features</b>
+   3. Click <b>Next</b>
 13. On the <i>Configuration settings</i> page, click the <b>+Add settings</b> option to open the Settings picker
    1. In the <i>Browse by category</i> list, scroll down to <b>Windows AI</b> and click <b>Windows AI</b>
    2. The Windows AI settings appear. <b>Select</b> the following settings:
@@ -203,3 +204,24 @@ Objective: Build an Intune policy that enables the use of Recall, but block capt
 1.  On the Scope tags page, leave the defaults and click <b>Next</b>
 2.  On the Assignments page, leave the defaults (no groups selected) and click <b>Next</b>
 3.  On the Review + create page, validate the configuration settings and then click <b>Create</b>
+
+You did not necessarily need to use a text file to import the Uris and Apps, as you could simply enter them into the policy one row at a time. However, entering manually could be tedious if there are hundreds of entries. Knowing how to build the input files is critical for long-term maintenace in a complex environment.
+
+You also could disable Recall, Snapshots and Click to Do with these settings. If your organization needs to disable these features (until they are approved by leadership) you would use the Allow Recall Enablement, Disable Click To Do, and Disable AI Data Analysis settings to disable the features. Once disabled, an end user will be unable to enable or use these features.
+
+### Create AI Policy using Custom OMA-URI
+
+Not all AI policy settings are available in the Settings catalog (yet). There are settings that govern AI image capabilities and the use of the search agent in the Settings app. In this part of the lab you will construct a custom MDM policy that enables these features.
+
+1. In the Intune console, navigate to <i>Devices</i>. Under <i>Manage devices</i>, select <b>Configuration</b>
+2. Select <b>Create > New Policy</b>
+   1. Platform: <b>Windows 10 and later</b>
+   2. Profile type: <b>Templates</b>
+   3. The <i>Template name</i> list will appear. 
+   4. Select the option <b>Custom</b>
+   5. Click <b>Create</b> to start the policy creation wizard
+3. On the <i>Basics</i> page, enter the following information
+   1. Name: <i>lastname_firstname</i><b>_Enable Image and Settings Agent Copilot+ PC</b>
+   2. Description: <b>Enable AI features that are not present in the Settings catalog</b>
+   3. Click <b>Next</b>
+4. On the Configuration Settings page, click <b>Add</b> 
