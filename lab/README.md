@@ -211,7 +211,7 @@ You also could disable Recall, Snapshots and Click to Do with these settings. If
 
 ### Create AI Policy using Custom OMA-URI
 
-Not all AI policy settings are available in the Settings catalog (yet). There are settings that govern AI image capabilities and the use of the search agent in the Settings app. In this part of the lab you will construct a custom MDM policy that enables these features.
+Not all AI policy settings are available in the Settings catalog (yet). There are settings that govern AI image capabilities and the use of the search agent in the Settings app. In this part of the lab you will construct a custom MDM policy that enables these four (4) features.
 
 1. In the Intune console, navigate to <i>Devices</i>. Under <i>Manage devices</i>, select <b>Configuration</b>
 2. Select <b>Create > New Policy</b>
@@ -221,7 +221,44 @@ Not all AI policy settings are available in the Settings catalog (yet). There ar
    4. Select the option <b>Custom</b>
    5. Click <b>Create</b> to start the policy creation wizard
 3. On the <i>Basics</i> page, enter the following information
-   1. Name: <i>lastname_firstname</i><b>_Enable Image and Settings Agent Copilot+ PC</b>
+   1. Name: <i>lastname_firstname</i><b>_Enable Image AI and Settings Agent Copilot+ PC</b>
    2. Description: <b>Enable AI features that are not present in the Settings catalog</b>
    3. Click <b>Next</b>
-4. On the Configuration Settings page, click <b>Add</b> 
+4. On the Configuration Settings page, click the <b>Add</b> button.
+5. For the first setting, copy in the following information:
+   1. <i>Name</i>: Allow Paint CoCreator
+   2. <i>Description</i>: Enables Cocreator in Windows Paint
+   3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableCocreator
+   4. <i>Data Type</i>: Integer
+   5. <i>Value</i>: 0
+   6. Click <b>Save</b> to save the setting into the policy
+6. Click the <b>Add</b> button.
+7. For the second setting, copy in the following information:
+   1. <i>Name</i>: Allow Generative Fill
+   2. <i>Description</i>: Enables the use of generative fill in Windows Paint
+   3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableGenerativeFill
+   4. <i>Data Type</i>: Integer
+   5. <i>Value</i>: 0
+   6. Click <b>Save</b> to save the setting into the policy
+8. Click the <b>Add</b> button.
+9.  For the third setting, copy in the following information:
+    1. <i>Name</i>: Allow Image Creator
+    2. <i>Description</i>: Enables use of Image Creator in Windows Paint
+    3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableImageCreator
+    4. <i>Data Type</i>: Integer
+    5. <i>Value</i>: 0
+    6. Click <b>Save</b> to save the setting into the policy
+10. Click the <b>Add</b> button.
+11. For the fourth setting, copy in the following information:
+    1. <i>Name</i>: Allow Settings Agent
+    2. <i>Description</i>: Enables Settings Agentic Search experience
+    3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableSettingsAgent
+    4. <i>Data Type</i>: Integer
+    5. <i>Value</i>: 0
+    6. Click <b>Save</b> to save the setting into the policy
+12. Click <b>Next</b>
+13. On the <i>Assignments</i> page, leave the policy unassigned and click <b>Next</b>
+14. On the <i>Applicability</i> page, leave the rules blank and click <b>Next</b>
+15. On the <i>Review</i> page, review the policy and then click<b>Create</b>
+
+You also could disable these features as well. If your organization needs to disable these features (until they are approved by leadership) you would set the integer value to 1 to put the feature into a disabled state.
