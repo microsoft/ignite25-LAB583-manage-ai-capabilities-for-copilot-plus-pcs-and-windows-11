@@ -63,21 +63,23 @@ Send them to [Mike Kinsman](mailto:mikki@microsoft.com) and [Laurent Bugnion](lb
 
 ### Session Description
 
-*Add Session Description*
+This session provides lab attendees with hands on experience with using and managing AI features and experiences on Copilot+ PCs. 
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+- Enable and manage AI experiences for Windows Copilot+ PCs
+- Describe the customizations available to users and the controls available to IT admins
+- Use Microsoft Intune fine-tune popular features like Recall, Click to Do, and others.
+- Understand privacy, security and end user readiness
+
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. Copilot+ PC running Windows 11 25H2
+2. Microsoft Intune
+3. M365 Copilot
 
 ### 🌟 Microsoft Learn MCP Server
 
@@ -99,20 +101,8 @@ For more information, setup instructions for other dev clients, and to post comm
 
 ## Content Owners
 
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
-
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
-"/><br />
-        <sub><b> INSERT NAME HERE
-</b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
-    </td>
     <td align="center"><a href="http://github.com/MSFTEric">
         <img src="https://github.com/MSFTEric.png" width="100px;" alt="Eric Moe"/><br />
         <sub><b>Eric Moe
