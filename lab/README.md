@@ -22,35 +22,36 @@ By the end of this session, you will:
 
 Let's get started!
 
-===
+ 
 # Exercise One: Meet your Copilot+ PC
 
 <b>Objective</b>: Understand the default Windows-enabled AI features on your Copilot+ PC and the components that are installed.
 
->[!NOTE] On Windows 11 24H2, by default all AI Components are set to a disabled state. On Windows 11 25H2, some AI features are enabled by default: <i>Agentic search experience in Settings, Improved Windows Search, and Click to Do</i>
+>Note: On Windows 11 24H2, by default all AI Components are set to a disabled state. On Windows 11 25H2, some AI features are enabled by default: <i>Agentic search experience in Settings, Improved Windows Search, and Click to Do</i>
 
 1. Launch the <b>Settings</b> application.
 2. Navigate to <b>System</b>
 3. Scroll down to <b>AI Components</b> and click on <b>AI Components</b> 
 
-!IMAGE[Exercise1-Settings-AI Components.png](instructions310362/Exercise1-Settings-AI Components.png){700}
+![Settings AI Components](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-Settings-AI%20Components.png)
+
 
 4. You will see the following AI Components installed locally:
 
-!IMAGE[Exercise1-System-AIComponents.jpg](instructions310362/Exercise1-System-AIComponents.jpg){500}
+![Installed AI Components](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-System-AIComponents.jpg)
 
 As more AI features are enabled on your Copilot+ PC, additional AI components may be installed and will appear in this section of the Settings app. 
 
 Leave the Settings app open for the next Exercise.
 
-===
+ 
 # Exercise Two: Explore Agentic Search Experience in Settings
 
 <b>Objective</b>: Use natural language to quickly find the setting you are looking for in the Windows 11 Settings app.
 
 At the top of the Settings app, you will see the search experience is now AI-enabled through the visual cue next to the magnifier.
 
-!IMAGE[Exercise1-AgenticSearch-Settings.jpg](instructions310362/Exercise1-AgenticSearch-Settings.jpg){500}
+![Agentic Search in Settings](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-AgenticSearch-Settings.jpg)
 
 End users can now search for settings using a natural language query as opposed to needing to know precisely which section in Settings they need to be in, or how the Setting is named. The following steps illustrate the types of natural language searches Settings can now handle.
 
@@ -58,10 +59,10 @@ End users can now search for settings using a natural language query as opposed 
 2. In the Settings search box, type in +++change mouse pointer+++, allow the search results to populate, and press <b>Enter</b>. Again, you are brought to the right Settings page to adjust the mouse pointer and other mouse settings.
 3. In the Settings search box, type in +++change time zone+++, allow the search results to populate, and press <b>Enter</b>. You should be at the Settings page to change your system's time zone.
 
->[!NOTE] On a non-Copilot+ PC Settings app, you would see "No results for *the search you made*" if you attempted these same searches
+>Note: On a non-Copilot+ PC Settings app, you would see "No results for *the search you made*" if you attempted these same searches
 
 4. <b>Close</b> the <b>Settings</b> app
-===
+ 
 # Exercise Three: Explore Click to Do feature in Windows
 
 <b>Objective</b>: Gain hands-on experience with Click to Do
@@ -73,17 +74,17 @@ Click To Do is a Copilot+ PC feature that enables users to take contextual actio
 1. Launch the <b>Settings</b> application.
 2. In the Settings Search box, type in +++How do I turn on click to do+++, wait for the results and then press <b>Enter</b>. You will be taken to the <b>Privacy & security > Click to Do</b> settings page. 
 
-!IMAGE[Exercise1-ClickToDo-Settings.jpg](instructions310362/Exercise1-ClickToDo-Settings.jpg){500}
+![Click to Do in Settings](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-ClickToDo-Settings.jpg)
 
 3. As you can see, on Windows 11 25H2, Click to Do is enabled by default. However, it can be disabled via Intune policy (you will learn how in Exercise Seven).
 4. Launch Click to Do by pressing <b>Windows key + Q</b> together
 5. The first time a user launches Click to Do, they are presented with an interactive tutorial.
 
-!IMAGE[Exercise1-ClickToDo-TutorialStart.jpg](instructions310362/Exercise1-ClickToDo-TutorialStart.jpg){400}
+![Click to Do Tutorial Start](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-ClickToDo-TutorialStart.jpg)
 
 6. <b>Complete</b> the Click to Do tutorial
 
->[!NOTE] There are two additional methods to launch Click to Do: Swipe in from the right-side of the screen, or use <b>Windows key + left mouse click</b>
+>Note: There are two additional methods to launch Click to Do: Swipe in from the right-side of the screen, or use <b>Windows key + left mouse click</b>
 
 ### Using Click to Do with Documents
 
