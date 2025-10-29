@@ -229,17 +229,16 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 12. In the Paint canvas, use <b>Ctrl+A</b> to select everything and then click the <b>Delete</b> key to start over with a blank page.
 13. In the Copilot menu, select Cocreator to launch the Cocreator option
 
-!IMAGE[Exercise7-LaunchCoCreator.png](instructions310362/Exercise7-LaunchCoCreator.png){300}
 ![Launch Cocreator](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-LaunchCoCreator.png)
 
 14. Cocreator differs from the Image Creator in that you and Copilot are working together to create your image. Let's suppose you tried a few prompts with Image Creator but the image layout is not what you are looking for. You can use Cocreator so you can start to sketch how you want objects positioned in the picture and the drawing is generated based on your guidance.
 15. In the Cocreator pane, type in +++a bridge at sunset+++, and then in the Paint canvas, begin to sketch out a bridge crossing water at sunset and watch the image get built in the Cocreator pane.
 
-!IMAGE[Exercise7-UsingCocreator.png](instructions310362/Exercise7-UsingCocreator.png){300}
+![Using Cocreator in Paint](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-UsingCocreator.png)
 
 16. The image below is an example where a rudimentary sketch was built in the canvas. Cocreator simultaneously built an image from both the natural language prompt and what was sketched by the end user.
 
-!IMAGE[Exercise7-SketchingBridge.png](instructions310362/Exercise7-SketchingBridge.png)
+![Sketch of a bridge](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-SketchingBridge.png)
 
 17. <i>Experiment</i> with your own prompt and sketch to see how Cocreator can help enhance your drawing. You also have additional controls over the Cocreator including the following:
     1. Adjust the creativity slider to allow Cocreator to stick closer to your original sketch or embellish it greatly.
@@ -257,20 +256,19 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 23. Putting it all together, try the following starting with a blank canvas in Paint:
     1. In Image Creator, use the prompt +++Draw a home office with a desk, a chair, bookshelves, a window, and a houseplant+++
     
-    !IMAGE[Exercise7-Combo.png](instructions310362/Exercise7-Combo.png)
+    ![Combo 1](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-Combo.png)
 
     2. <b>Generate</b> the image in an <i>Anime</i> style
     3. Select one of the variants, or generate again to build a new set of options. Once you have a picture you like, add it to your canvas.
     4. In the <i>Sticker Generator</i>, use the prompt +++a cat with large eyes sitting on a cat bed+++ and then select one of the results to paste into your canvas. 
     5. <b>Resize</b> the sticker (note it has a transparent background for easy overlay).
     
-    !IMAGE[Exercise7-Combo2.png](instructions310362/Exercise7-Combo2.png)
+    ![Combo2](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-Combo2.png)
 
 24.When finished, <b>Close</b> Paint without saving your file(s). 
 
->[!NOTE]In Exercise Eight you will create an Intune policy to manage the use of AI features in Paint.
-
-===
+>Note: In Exercise Eight you will create an Intune policy to manage the use of AI features in Paint.
+ 
 # Exercise Six: Explore AI Features in Photos
 
 <b>Objective</b>: The AI Features in Photos are intended to assist end users in making edits to Photos without requiring additional software. In this lab you will gain hands on experience with several of these features without requiring formal training or third-party photo editing software.
@@ -282,38 +280,38 @@ Click to Do provides a quick way to capture the text in an image. In this part o
     2. If prompted with "Allow image categorization" dialog, select <b>Allow</b> 
 3. After the photo is opened, in the <u>upper-left corner</u> of the Photos app, you will see an <b>Edit</b> button.
 
-!IMAGE[Exercise8-OpenPhoto.png](instructions310362/Exercise8-OpenPhoto.png){500}
+![Open Photo](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-OpenPhoto.png)
 
 4. Click the <b>Edit</b> button to enter the editing mode.
 5. Once in editing mode, AI features will be available in the top menu.
 
-!IMAGE[Exercise8-AIMenuOptions.png](instructions310362/Exercise8-AIMenuOptions.png){500}
+![AI Menu Options in Photos](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-AIMenuOptions.png)
 
 6. From left-to-right the AI features are as follows:
     1. <b>Erase</b>. This provides the ability to perform a generative erase of items from the picture. You can adjust the brush size to provide more fidelity of control. This feature works best with removing something small and distinct from the image. You will gain some erasing experience when exploring the Background option in the next step.
     2. <b>Background</b>. This feature will either blur, remove or replace the background. 
         1. Let's begin by removing the background. Select the <b>Remove</b> option in the middle of the available options.
         
-        !IMAGE[Exercise8-BackgroundRemoval.png](instructions310362/Exercise8-BackgroundRemoval.png)
+        ![Remove background](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-BackgroundRemoval.png)
 
         2. You will see the background <i>mostly</i> get removed. There may still be some background artifacts in the image due to the complexity of this image.
         3. Enable the Background brush tool by <b>changing</b> the slider from "off" to "<b>on</b>".
         
-        !IMAGE[Exercise8-BackgroundBrushEnabled.png](instructions310362/Exercise8-BackgroundBrushEnabled.png)
+        ![Enable Background Brush](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-BackgroundBrushEnabled.png)
 
         4. The image now shows where the "background" has been identified through a set of diagonal lines. You can now use the brush tool to erase the remaining elements. Simply <b>hover</b> over the areas to remove, click the <b>left mouse button</b> and then <b>drag</b> the brush over the areas to erase.
         5. <b>Toggle</b> the brush tool <b>off</b> to see if you missed any areas. <b>Toggle</b> back <b>on</b> to continue removing until complete. Your image will likely look like the image below.
-        
-        !IMAGE[Exercise8-BackgroundRemoved.png](instructions310362/Exercise8-BackgroundRemoved.png)
+         
+        ![Background Removed](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-BackgroundRemoved.png)
 
         6. Click the <b>Replace</b> option to replace the background with a solid color. Change the color using the slider and click the color to the right of the slider to replace the background entirely with a solid color. In the image below, a solid brown background has been applied to the photo.
         
-        !IMAGE[Exercise8-Replacebackground2.png](instructions310362/Exercise8-Replacebackground2.png)
+        ![Replace Background](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-Replacebackground2.png)
 
         7. Click the <b>Reset background</b> button to restore the image to its original background.
-    3. <b>Restyle image</b>. This feature requires the use of an MSA (Microsoft Account) because the resulting photo is processed through Microsoft's AI safety and security filters in a data center. Due to limitations in this lab environment, you will not be able to gain hands on experience with this feature. <b>Do not sign-in with your MSA!</b>
+    4. <b>Restyle image</b>. This feature requires the use of an MSA (Microsoft Account) because the resulting photo is processed through Microsoft's AI safety and security filters in a data center. Due to limitations in this lab environment, you will not be able to gain hands on experience with this feature. <b>Do not sign-in with your MSA!</b>
     
-    !IMAGE[Exercise8-RestyleImage.png](instructions310362/Exercise8-RestyleImage.png){200}
+    ![Restyle Image](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-RestyleImage.png)
 
     4. <b>Super resolution</b>. This feature uses AI to upscale a low resolution picture to a higher resolution. 
         1. To use <b>Super resolution</b> you will need to start with a lower resolution picture that the photo of the automobile. 
@@ -321,52 +319,51 @@ Click to Do provides a quick way to capture the text in an image. In this part o
         3. <b>Click</b> on the Super resolution icon to launch the feature. 
         4. Provided this lab machine was reset between lab sessions, the AI model for this feature will not be available by default. As mentioned at the beginning of this lab, AI components are installed when features are enabled. The Super resolution feature in Photos is one example of this. If you are prompted with the dialog below, click <b>Download</b> to download the model.
         
-        !IMAGE[Exercise8-DownloadAIModelSuperResolution.png](instructions310362/Exercise8-DownloadAIModelSuperResolution.png){300} 
+        ![Download AI Model for Super Resolution](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-DownloadAIModelSuperResolution.png)
 
         5. If you were prompted to install this component, you can confirm this by opening <b>Settings</b>, navigating to <b>System</b> and then selecting <b>AI Components</b>. You will see the AI component <b>AI Image Processing</b> installed.
         
-        !IMAGE[Exercise8-NewAIComponentInstalled.png](instructions310362/Exercise8-NewAIComponentInstalled.png){600} 
+        ![New AI Component Installed](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-NewAIComponentInstalled.png)
 
         6. <b>Close</b> the Settings app and return to Photos.
         7. In the right-hand Super resolution menu, you can adjust the picture scale from 240x320 to a higher resolution. Adjust the slider to 1920 x 2560 and then the image will get upscaled.
         
-        !IMAGE[Exercise8-AdjustScaleSlider.png](instructions310362/Exercise8-AdjustScaleSlider.png){400}
+        ![Adjust Scale Slider](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-AdjustScaleSlider.png)
 
         8. The Super resolution feature will place a vertical bar in the middle of the picture. Moving the bar to the right shows the original image, moving it to the left will show the enhanced image. 
         9. Click the <b>Cancel</b> button in the upper-right corner to not save the upscale changes.
         
-        !IMAGE[Exercise8-CancelButton.png](instructions310362/Exercise8-CancelButton.png){400}
+        ![Cancel Button](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-CancelButton.png)
 
         10. Confirm that you don't want to save changes.
         11. <b>Close</b> the file Farm_LowRes.jpg
-    5. <b>Relight</b>. This feature will adjust the lighting in the picture. Return to the C:\LAB583\Exercise6-Photos\PontiacGTO.jpg photo that you were using previously.
+    6. <b>Relight</b>. This feature will adjust the lighting in the picture. Return to the C:\LAB583\Exercise6-Photos\PontiacGTO.jpg photo that you were using previously.
         1. <b>Click</b> the Relight icon to launch the feature.
         2. The Relight menu will appear in the right-hand side of the Photo editor.
         
-        !IMAGE[Exercise8-RelightEnabled.png](instructions310362/Exercise8-RelightEnabled.png)
+        ![Relight Enabled](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-RelightEnabled.png)
 
         3. By default, light locations are enabled. Light locations show up as circled 1, 2, and 3 icons on your photo. Arrows indicate the direction the light is shining from that location. All three lights point to a single circle (currently in the middle of the photo). At the bottom of the Relight menu you will see options for disabling light 1, light 2 and light 3, as well as an option for enabling ambient light.
         4. There are six preset lighting options (Original, Softbox, Classic Portrait, Dynamic, Golden Hour, and Cyberpunk). Choose each preset to observe how the picture is adjusted based on the lighting changes. When done, return to the <b>Softbox</b> preset option.
         5. Move the light sources 1, 2, and 3 to the top of the picture and then move the focus point of the light to near the bottom of the picture and notice how AI will generate shadows based on where the light is not striking.
         
-        !IMAGE[Exercise8-LightingAdjusted.png](instructions310362/Exercise8-LightingAdjusted.png)
+        ![Lighting Adjusted](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-LightingAdjusted.png)
 
         6. Notice that with this lighting arrangement the top of the car gets very bright. <b>Expand</b> the drop down next to the option for light 2 and reduce the intensity to <b>-1</b>. 
         
-        !IMAGE[Exercise8-AdjustLight2.png](instructions310362/Exercise8-AdjustLight2.png){300}
+        ![Adjust Lighting](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-AdjustLight2.png)
 
         7. The photo changes to reduce the glare from the top and produce more dramatic shadows.
         
-        !IMAGE[Exercise8-AdjustedLight2.png](instructions310362/Exercise8-AdjustedLight2.png)
+        ![Lighting Adjusted](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-AdjustedLight2.png)
 
         8. The lighting sources can also have a color tint to them. <b>Expand</b> light number three with the drop down, change the color to Hex <b>409c2d</b> (RGB 64, 156, 45). Increase the brightness to <b>50</b>. Light source 3 now has a color ring that matches the color value you set (Hex 409c2d). The entire photo now has a substantial green tint to it. It's probably not the most beautiful photograph, but it shows how you can quickly and easily adjust the lighting, tone, and color of a photograph.
         
-        !IMAGE[Exercise8-GreenCar.png](instructions310362/Exercise8-GreenCar.png)
+        ![Green Car](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise8-GreenCar.png)
         
-7. This completes the exploration of the AI features available in the Photos app. <b>Close</b> the Photos app before proceeding to the next Exercise.
+8. This completes the exploration of the AI features available in the Photos app. <b>Close</b> the Photos app before proceeding to the next Exercise.
 
 
-===
 # Exercise Seven: Build a Settings Catalog AI Policy in Intune
 
 <b>Objective</b>: Gain hands on experience configuring MDM policies for Copilot+ PC AI Features. 
