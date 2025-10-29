@@ -13,7 +13,7 @@ By the end of this session, you will:
 
 ### What You'll Need
 - A Copilot+ PC with Windows 11 25H2.
-- Files used for various exercises already extracted to <b>C:\LAB583</b>
+- Files used for various exercises extracted to <b>C:\LAB583</b>. We are still determining where to host the zip file because Github won't let us upload a file that big to this repository...
 - Credentials for the lab environment (see the resource tab above).
 - An M365 Copilot license for certain exercises.
 - Access to a test Intune tenant for policy configuration.
@@ -55,9 +55,9 @@ At the top of the Settings app, you will see the search experience is now AI-ena
 
 End users can now search for settings using a natural language query as opposed to needing to know precisely which section in Settings they need to be in, or how the Setting is named. The following steps illustrate the types of natural language searches Settings can now handle.
 
-1. In the Settings search box, type in +++Add a bluetooth device+++, allow the search results to populate, and press <b>Enter</b>. Notice that you are brought to the right Settings page to pair devices with bluetooth.
-2. In the Settings search box, type in +++change mouse pointer+++, allow the search results to populate, and press <b>Enter</b>. Again, you are brought to the right Settings page to adjust the mouse pointer and other mouse settings.
-3. In the Settings search box, type in +++change time zone+++, allow the search results to populate, and press <b>Enter</b>. You should be at the Settings page to change your system's time zone.
+1. In the Settings search box, type in <b>Add a bluetooth device</b>, allow the search results to populate, and press <b>Enter</b>. Notice that you are brought to the right Settings page to pair devices with bluetooth.
+2. In the Settings search box, type in <b>change mouse pointer</b>, allow the search results to populate, and press <b>Enter</b>. Again, you are brought to the right Settings page to adjust the mouse pointer and other mouse settings.
+3. In the Settings search box, type in <b>change time zone</b>, allow the search results to populate, and press <b>Enter</b>. You should be at the Settings page to change your system's time zone.
 
 >Note: On a non-Copilot+ PC Settings app, you would see "No results for *the search you made*" if you attempted these same searches
 
@@ -72,7 +72,7 @@ Click To Do is a Copilot+ PC feature that enables users to take contextual actio
 ### Launch Click to Do
 
 1. Launch the <b>Settings</b> application.
-2. In the Settings Search box, type in +++How do I turn on click to do+++, wait for the results and then press <b>Enter</b>. You will be taken to the <b>Privacy & security > Click to Do</b> settings page. 
+2. In the Settings Search box, type in <b>How do I turn on click to do</b>, wait for the results and then press <b>Enter</b>. You will be taken to the <b>Privacy & security > Click to Do</b> settings page. 
 
 ![Click to Do in Settings](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-ClickToDo-Settings.jpg)
 
@@ -178,7 +178,7 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 ![Notepad Copilot Menu](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-NotepadCopilotMenu.jpg)
 
 12. From the AI drop-down menu, select the <b>Write</b> option. If this is the first time launching the option, you will see a tutorial that explains that you will write a prompt and AI will generate a draft in Notepad. Complete the wizard before proceeding.
-13. In the Write prompt that appears,type or copy in +++Create a draft blog post about things to see and do in San Francisco.+++ and then submit the prompt.
+13. In the Write prompt that appears,type or copy in <b>Create a draft blog post about things to see and do in San Francisco.</b> and then submit the prompt.
 14. Watch the changes in Task Manager - you should not see any additional NPU utilization as Notepad AI will leverage the CPU to generate its content.
 
 ![No NPU Utilization when using Notepad AI](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise5-NoNPUUtilization.png)
@@ -212,7 +212,7 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 ![Image Creator Wizard Starts](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-ImageCreatorWizardStart.png)
 
 6. <b>Complete</b> the wizard
-7. In the right-hand pane of Paint, the <i>Image Creator</i> is available for you to add information to. For this first exercise, let's use the simple prompt +++a bridge crossing water at sunset+++. You can then choose a style using the drop-down selector. Pick Oil Painting (or any option you prefer)
+7. In the right-hand pane of Paint, the <i>Image Creator</i> is available for you to add information to. For this first exercise, let's use the simple prompt <b>a bridge crossing water at sunset</b> You can then choose a style using the drop-down selector. Pick Oil Painting (or any option you prefer)
 
 ![Suggestion with Format](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-Suggestion-With-Format.png)
 
@@ -232,7 +232,7 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 ![Launch Cocreator](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-LaunchCoCreator.png)
 
 14. Cocreator differs from the Image Creator in that you and Copilot are working together to create your image. Let's suppose you tried a few prompts with Image Creator but the image layout is not what you are looking for. You can use Cocreator so you can start to sketch how you want objects positioned in the picture and the drawing is generated based on your guidance.
-15. In the Cocreator pane, type in +++a bridge at sunset+++, and then in the Paint canvas, begin to sketch out a bridge crossing water at sunset and watch the image get built in the Cocreator pane.
+15. In the Cocreator pane, type in <b>a bridge at sunset</b> and then in the Paint canvas, begin to sketch out a bridge crossing water at sunset and watch the image get built in the Cocreator pane.
 
 ![Using Cocreator in Paint](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-UsingCocreator.png)
 
@@ -248,19 +248,19 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 18. While there are several other AI features in Paint, we are going to conclude this exercise with the <i>Sticker Generator</i>. 
 19. Clear the canvas by using <b>Ctrl+A</b> and then press <b>Delete</b>
 20. Under the Copilot menu, select <b>Sticker Generator</b>
-21. In the Sticker Generator prompt, type or paste in +++a cat typing at a computer+++ and then click <b>Generate</b>
+21. In the Sticker Generator prompt, type or paste in <b>a cat typing at a computer</b> and then click <b>Generate</b>
 
-    > <i>If you prefer dogs, type in </i>+++a dog typing at a computer+++ <i>(or, for something completely different, try</i> +++a sea otter typing at a computer+++)
+    > <i>If you prefer dogs, type in </i>a dog typing at a computer <i>(or, for something completely different, try </i>a sea otter typing at a computer
 
 22. Clicking on one of the generated stickers will place it onto the canvas. This allows you to start with a base image on the canvas, but then generate individual stickers to overlay.
 23. Putting it all together, try the following starting with a blank canvas in Paint:
-    1. In Image Creator, use the prompt +++Draw a home office with a desk, a chair, bookshelves, a window, and a houseplant+++
+    1. In Image Creator, use the prompt <b>Draw a home office with a desk, a chair, bookshelves, a window, and a houseplant</b>
     
     ![Combo 1](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-Combo.png)
 
     2. <b>Generate</b> the image in an <i>Anime</i> style
     3. Select one of the variants, or generate again to build a new set of options. Once you have a picture you like, add it to your canvas.
-    4. In the <i>Sticker Generator</i>, use the prompt +++a cat with large eyes sitting on a cat bed+++ and then select one of the results to paste into your canvas. 
+    4. In the <i>Sticker Generator</i>, use the prompt <b>a cat with large eyes sitting on a cat bed</b> and then select one of the results to paste into your canvas. 
     5. <b>Resize</b> the sticker (note it has a transparent background for easy overlay).
     
     ![Combo2](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-Combo2.png)
@@ -482,8 +482,8 @@ Not all AI policy settings are available in the Settings catalog (yet). There ar
    3. Click <b>Next</b>
 4. On the Configuration Settings page, click the <b>Add</b> button.
 5. For the first setting, copy in the following information:
-   1. <i>Name</i>: Allow Paint CoCreator+++
-   2. <i>Description</i>: Enables Cocreator in Windows Paint+++
+   1. <i>Name</i>: Allow Paint CoCreator
+   2. <i>Description</i>: Enables Cocreator in Windows Paint
    3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableCocreator
    4. <i>Data Type</i>: Integer
    5. <i>Value</i>: 0
@@ -601,7 +601,7 @@ Copilot+ PCs have several local AI features, but to start with you would likely 
 
 1. Launch <b>M365 Copilot</b>
 2. Ensure you are signed in with the M365 Copilot licensed Entra ID provided to you as part of this lab.
-3. You will use the Researcher agent in M365 Copilot. You can do so by selecting Researcher under the available chat agents, or invoke Researcher  by typing +++@Researcher+++ in the M365 Copilot chat prompt and pressing <b>Enter</b>.
+3. You will use the Researcher agent in M365 Copilot. You can do so by selecting Researcher under the available chat agents, or invoke Researcher  by typing <b>@Researcher</b> in the M365 Copilot chat prompt and pressing <b>Enter</b>.
 
 ![Invoking Researcher](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise13-InvokingResearcher.png)
 
@@ -841,7 +841,7 @@ Let's suppose you have emailed this proposal summary to your stakeholders and on
 
 f you cannot remember how to use specific AI features in Paint, revisit Exercise Five and then return to this step to build an example site survey diagram.
 
-1. Use <i>Cocreator</i> in Paint with the prompt +++an office floor plan with wireless access points highlighted+++ (or experiment with alternate prompts)
+1. Use <i>Cocreator</i> in Paint with the prompt <b>an office floor plan with wireless access points highlighted</b> (or experiment with alternate prompts)
 2. Begin sketching a rough office layout and Paint will cocreate with you. An example is shown below
 
 ![Cocreator Office Floor Plan Example](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise13-Cocreator.png)
@@ -880,7 +880,7 @@ During the call, one of your colleagues from France would like to bring up an is
 
 During the call, one of your colleagues asks what information the end user will need to be able to discover the new Wi-Fi network and connect to it.
 
-Using Agentic Search in Settings, search for +++connect to new wireless network+++ to show how the appropriate Settings page can be found easily using this search.
+Using Agentic Search in Settings, search for <b>connect to new wireless network</b> to show how the appropriate Settings page can be found easily using this search.
 
 
 ### Snipping Tool
