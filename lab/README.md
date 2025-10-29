@@ -390,24 +390,24 @@ Before starting, perform the following steps to access your Intune tenant:
 2. Launch <b>Notepad</b> and start with a blank text file
 3. Type or copy the following two lines into your new, blank text file
 
-     +++https://employee.contoso.com+++
+     https://employee.contoso.com
 
-     +++https://benefits.contoso.com+++
+     https://benefits.contoso.com
 
 4. Select <b>File->Save As</b>, change the <i>save as type</i> to <b>All Files</b> and then <b>save</b> the file to your <i>Documents</i> folder as <b>DenyUriListForRecall.csv</b>
 
->[!IMPORTANT]Save the file as .CSV, not .txt.
+>IMPORTANT: Save the file as .CSV, not .txt.
 
 5. Create a new blank text file in Notepad
 6. <b>Type</b> or <b>copy</b> the following two lines into the new, blank text file
 
-     +++ContosoCRM.exe+++
+     ContosoCRM.exe
 
-     +++HappyCustomers.exe+++
+     HappyCustomers.exe
 
 7. Select <b>File->Save As</b>, change the <i>save as type</i> to <b>All Files</b> and then <b>save</b> the file to your <i>Documents</i> folder as <b>DenyAppListForRecall.csv</b>
 
->[!IMPORTANT]Save the file as .CSV, not .txt.
+>IMPORTANT: Save the file as .CSV, not .txt.
 
 8. After both CSV files have been saved, you may close Notepad. 
 9. Return to the Edge browser session with your Intune console.
@@ -439,11 +439,11 @@ Before starting, perform the following steps to access your Intune tenant:
       2. Set Maximum Storage Duration for Recall Snapshots: Use the drop-down menu to select <b>60 days</b>
       3. At the Set Deny Uri List for Recall setting, click the <b>Import</b> button, <b>de-select</b> the "My data has headers" option, and then <b>browse</b> to the <b>DenyUriListForRecall.csv</b> file you created and saved earlier. Click <b>"Select"</b> to complete the import of the file. 
       
-      !IMAGE[Exercise2-SetDenyUriListForRecall.jpg](instructions310362/Exercise2-SetDenyUriListForRecall.jpg)
+      ![Set Deny URI List for Recall](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-SetDenyUriListForRecall.jpg)
 
       1. At the Set Deny App List for Recall setting, click the <b>Import</b> button, <b>de-select</b> the "My data has headers" option, and then <b>browse</b> to the <b>DenyAppListForRecall.csv</b> file you created. Click <b>"Select"</b> to complete the import of the file. 
       
-      !IMAGE[Exercise2-SetDenyAppListForRecall.jpg](instructions310362/Exercise2-SetDenyAppListForRecall.jpg)
+      ![Set Deny App List for Recall](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-SetDenyAppListForRecall.jpg)
    
       2. Set the Disable Click to Do (User) setting to <b>Click to Do is enabled</b> if it is not already set to this value
       3. Set the Disable AI Data Anlysis slider to <b>Enable Saving Snapshots for Window</b> if it is not already set to this value.
@@ -453,7 +453,7 @@ Before starting, perform the following steps to access your Intune tenant:
 2.  On the Assignments page, leave the defaults (no groups selected) and click <b>Next</b>
 3.  On the Review + create page, validate the configuration settings and then click <b>Create</b>
 
->[!NOTE]You did not necessarily need to use a text file to import the URIs and Apps, as you could simply enter them into the policy one row at a time. However, entering manually could be tedious if there are hundreds of entries. Knowing how to build the input files is critical for long-term maintenance in a complex environment.
+>Note: You did not necessarily need to use a text file to import the URIs and Apps, as you could simply enter them into the policy one row at a time. However, entering manually could be tedious if there are hundreds of entries. Knowing how to build the input files is critical for long-term maintenance in a complex environment.
 
 You also could disable Recall, Snapshots and Click to Do with these settings. 
 
@@ -461,9 +461,8 @@ If your organization needs to disable these features (until they are approved fo
 
 Once disabled, an end user will be unable to enable or use these features.
 
->[!IMPORTANT]Before proceeding to the next exercise, navigate to your <b>Documents</b> folder and <b>delete</b> the two CSV files you created in this exercise.
+>Important: Before proceeding to the next exercise, navigate to your <b>Documents</b> folder and <b>delete</b> the two CSV files you created in this exercise.
 
-===
 # Exercise Eight: Create AI Policy using Custom OMA-URI
 
 <b>Objective</b>: Create an MDM policy that manages AI settings in Paint and Settings.
@@ -479,39 +478,39 @@ Not all AI policy settings are available in the Settings catalog (yet). There ar
    5. Click <b>Create</b> to start the policy creation wizard
 3. On the <i>Basics</i> page, enter the following information
    1. Name: <i>lastname_firstname</i><b>_Enable Image AI and Settings Agent Copilot+ PC</b>
-   2. Description: +++Enable AI features that are not present in the Settings catalog+++
+   2. Description: Enable AI features that are not present in the Settings catalog
    3. Click <b>Next</b>
 4. On the Configuration Settings page, click the <b>Add</b> button.
 5. For the first setting, copy in the following information:
-   1. <i>Name</i>: +++Allow Paint CoCreator+++
-   2. <i>Description</i>: +++Enables Cocreator in Windows Paint+++
-   3. <i>OMA-URI</i>: +++./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableCocreator+++
+   1. <i>Name</i>: Allow Paint CoCreator+++
+   2. <i>Description</i>: Enables Cocreator in Windows Paint+++
+   3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableCocreator
    4. <i>Data Type</i>: Integer
-   5. <i>Value</i>: +++0+++
+   5. <i>Value</i>: 0
    6. Click <b>Save</b> to save the setting into the policy
 6. Click the <b>Add</b> button.
 7. For the second setting, copy in the following information:
-   1. <i>Name</i>: +++Allow Generative Fill+++
-   2. <i>Description</i>: +++Enables the use of generative fill in Windows Paint+++
-   3. <i>OMA-URI</i>: +++./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableGenerativeFill+++
+   1. <i>Name</i>: Allow Generative Fill
+   2. <i>Description</i>: Enables the use of generative fill in Windows Paint
+   3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableGenerativeFill
    4. <i>Data Type</i>: Integer
-   5. <i>Value</i>: +++0+++
+   5. <i>Value</i>: 0
    6. Click <b>Save</b> to save the setting into the policy
 8. Click the <b>Add</b> button.
 9.  For the third setting, copy in the following information:
-    1. <i>Name</i>: +++Allow Image Creator+++
-    2. <i>Description</i>: +++Enables use of Image Creator in Windows Paint+++
-    3. <i>OMA-URI</i>: +++./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableImageCreator+++
+    1. <i>Name</i>: Allow Image Creator
+    2. <i>Description</i>: Enables use of Image Creator in Windows Paint
+    3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableImageCreator
     4. <i>Data Type</i>: Integer
-    5. <i>Value</i>: +++0+++
+    5. <i>Value</i>: 0
     6. Click <b>Save</b> to save the setting into the policy
 10. Click the <b>Add</b> button.
 11. For the fourth setting, copy in the following information:
-    1. <i>Name</i>: +++Allow Settings Agent+++
-    2. <i>Description</i>: +++Enables Settings Agentic Search experience+++
-    3. <i>OMA-URI</i>: +++./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableSettingsAgent+++
+    1. <i>Name</i>: Allow Settings Agent
+    2. <i>Description</i>: Enables Settings Agentic Search experience
+    3. <i>OMA-URI</i>: ./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableSettingsAgent
     4. <i>Data Type</i>: Integer
-    5. <i>Value</i>: +++0+++
+    5. <i>Value</i>: 0
     6. Click <b>Save</b> to save the setting into the policy
 12. Click <b>Next</b>
 13. On the <i>Assignments</i> page, leave the policy unassigned and click <b>Next</b>
@@ -520,7 +519,6 @@ Not all AI policy settings are available in the Settings catalog (yet). There ar
 
 You also could disable these features as well. If your organization needs to disable these features (until they are approved for use) you would set the integer value to 1 to put each feature into a disabled state.
 
-===
 # Exercise Nine: Create Notepad AI (ADMX-backed) Policy
 
 <b>Objective</b>: Gain hands-on experience building an Inutne policy to manage the use of AI in Notepad
@@ -534,20 +532,20 @@ The Notepad policy definition has a dependency on the Windows Administrative tem
 3. Click on the <b>Import ADMX</b> tab
 4. Click the <b>Import</b> button
 
-!IMAGE[Exercise2-ImportADMXView.png](instructions310362/Exercise2-ImportADMXView.png)
+![Import ADMX View](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-ImportADMXView.png)
 
 5. <b>Selet</b> the <i>folder icon</i> for the ADMX file and then <b>navigate</b> to <b>C:\Windows\PolicyDefinitions</b> folder
 6. <b>Select</b> the file <b>Windows.admx</b> and then select <b>Open</b>
 7. Next you will import the Windows localized administrative template. To do this, select the <i>folder icon</i> for the ADML file and then <b>navigate</b> to <b>C:\windows\PolicyDefinitions\en-US</b>
 8. Select the file <b>Windows.adml</b> and then select <b>Open</b> </b>. 
 
-!IMAGE[Exercise2-ADMXandADMLImported.png](instructions310362/Exercise2-ADMXandADMLImported.png)
+![ADMX and ADML Imported](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-ADMXandADMLImported.png)
  
 9. Click <b>Next</b>
 10. Click the <b>Create</b> button
 11. On the <i>Import ADMX</i> page, click <b>Refresh</b> to confirm the upload was successful 
 
-!IMAGE[Exercise2-WindowsADMXImported.png](instructions310362/Exercise2-WindowsADMXImported.png)
+![Windows ADMX Imported](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-WindowsADMXImported.png)
 
 12. After the Windows ADMX has been successfully imported, you will be able to import the Notepad ADMX/ADML files 
 13. On the <i>Import ADMX</i> page, click <b>Import</b> again
@@ -555,13 +553,13 @@ The Notepad policy definition has a dependency on the Windows Administrative tem
 15. Select the <b>WindowsNotepad.admx</b> file and import it.
 15. Select the <i>folder icon</i> for the ADML file and then <b>navigate</b> to the en-US subfolder to locate the <b>WindowsNotepad.adml</b> file and import it.
 
-!IMAGE[Exercise2-NotepadADMXADMLImported.png](instructions310362/Exercise2-NotepadADMXADMLImported.png)  
+![Notepad ADMX and ADML Imported](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-NotepadADMXADMLImported.png)
 
 16. Click <b>Next</b>
 17. Click the <b>Create</b> button
 18. On the <i>Import ADMX</i> page, click <b>Refresh</b> to confirm the upload was successful 
 
-!IMAGE[Exercise2-NotepadADMXSuccessful.png](instructions310362/Exercise2-NotepadADMXSuccessful.png)  
+![Notepad ADMX Successfully Imported](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-NotepadADMXSuccessful.png)
 
 19. In the <b>Intune Devices | Manage Devices | Configuration</b> screen, click back on the <i>Policies</i> tab
 20. Select <b>Create > New Policy</b>
@@ -575,7 +573,7 @@ The Notepad policy definition has a dependency on the Windows Administrative tem
 23. Under <i>Setting name</i>, click on <b>Windows Components</b>, then <b>Notepad</b>, and then <b>Disable AI features in Notepad</b>
 24. This will bring up the policy configuration fly-out. Select <b>Enabled</b> to disable AI features in Notepad.
 
-!IMAGE[Exercise2-DisableAIfeaturesInNotepad.jpg](instructions310362/Exercise2-DisableAIfeaturesInNotepad.jpg)  
+![Disable AI Features in Notepad](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise2-DisableAIfeaturesInNotepad.jpg)
 
 25. Click <b>OK</b> to save the setting
 26. Click <b>Next</b> to proceed in the wizard
@@ -585,8 +583,6 @@ The Notepad policy definition has a dependency on the Windows Administrative tem
 
 You have now successfully created three different kinds of policies in Intune to manage AI features on Windows 11 and Copilot+ PCs!
 
-
-===
 #Exercise Ten: Start an M365 Copilot Researcher task
 
 In the very last exercise of this lab you will be using the output of M365 Copilot Researcher as the starting point for leveraging multiple Copilot+ PC AI features. 
@@ -607,18 +603,17 @@ Copilot+ PCs have several local AI features, but to start with you would likely 
 2. Ensure you are signed in with the M365 Copilot licensed Entra ID provided to you as part of this lab.
 3. You will use the Researcher agent in M365 Copilot. You can do so by selecting Researcher under the available chat agents, or invoke Researcher  by typing +++@Researcher+++ in the M365 Copilot chat prompt and pressing <b>Enter</b>.
 
-!IMAGE[Exercise13-InvokingResearcher.png](instructions310362/Exercise13-InvokingResearcher.png){500}
+![Invoking Researcher](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise13-InvokingResearcher.png)
 
 3. Use the following prompt (or modify it and use your own) in M365 Copilot Researcher:
 
-+++You are an IT professional tasked with planning a network migration from legacy Wi-Fi access points to Wi-Fi 7. You need to construct a proposal on the recommended approach, important technical considerations, implementation plan, recommended timeline, test plan and user communications.+++
+You are an IT professional tasked with planning a network migration from legacy Wi-Fi access points to Wi-Fi 7. You need to construct a proposal on the recommended approach, important technical considerations, implementation plan, recommended timeline, test plan and user communications.
 
 4. <b>Answer</b> any follow-on questions that Researcher may have about this request and confirm it is building a response.
 
->[!NOTE]<b>It will take several minutes for Researcher to build a response.</b> In the meantime, <b>minimize</b> M365 Copilot so that it continues to run in the background and then move on to the next exercise.
+>Note: <b>It will take several minutes for Researcher to build a response.</b> In the meantime, <b>minimize</b> M365 Copilot so that it continues to run in the background and then move on to the next exercise.
 
 
-===
 # Exercise Eleven: Live Captions with Translation
 
 <b>Objective</b>: Learn how to turn on and use Live Captions with Translation.
@@ -681,7 +676,7 @@ To make more content accessible to more people, live captions now has the abilit
 ---
 All live captions with translation processing occurs locally. The audio, voice data, and captions <b>never leave your device</b> and are not shared to the cloud or with Microsoft. The generated captions are not stored anywhere on the device or the cloud. 
 
->[!NOTE] What about if you are using a headset with your Copilot+ PC? Live Captions processes the sound that is coming through the system output. You can manage this by navigating to <b>System > Sound</b> in Settings and choosing to play sound all output sound through your headset. If System sounds are coming through onboard speakers, but Teams sound is redirected to your headset, the Live Captions will not process the sound in your headset. 
+>Note: What about if you are using a headset with your Copilot+ PC? Live Captions processes the sound that is coming through the system output. You can manage this by navigating to <b>System > Sound</b> in Settings and choosing to play sound all output sound through your headset. If System sounds are coming through onboard speakers, but Teams sound is redirected to your headset, the Live Captions will not process the sound in your headset. 
 
 ### Configure and use Live Captions with Translation
 
@@ -691,27 +686,27 @@ All live captions with translation processing occurs locally. The audio, voice d
         2. The quick settings menu launches 
         3. Within the quick settings menu, click the <b>Accessibility</b> option as shown in the image below 
         
-        !IMAGE[Exercise11-QuickSettingsFlyout.png](instructions310362/Exercise11-QuickSettingsFlyout.png){200}
+        ![Quick Settings Flyout](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise11-QuickSettingsFlyout.png)
 
         4. Scroll down the list of Accessibility options. Under <i>Hearing</i>, locate <b>Live captions</b>. 
         
-        !IMAGE[Exercise11-LiveCaptionsOption.png](instructions310362/Exercise11-LiveCaptionsOption.png){300}
+        ![Live Captions option](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise11-LiveCaptionsOption.png)
 
         5. To enable, you would toggle Live Captions from Off to On. <b>Do not make this change yet</b>, as there are two other ways to enable the feature.
         6. <b>Close</b> the quick settings menu.
-    2. <b>Option 2: Use the Settings app</b> 
+    3. <b>Option 2: Use the Settings app</b> 
         1. Open the <b>Settings</b> app
         2. In the <i>left-hand menu</i>, select <b>Accessibility</b>, then under the <b>Hearing</b> section, select <b>Captions</b> 
         
-        !IMAGE[Exercise11-OpenCaptionsInSettings-1.png](instructions310362/Exercise11-OpenCaptionsInSettings-1.png){600}
+        ![Open Captions in Settings](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise11-OpenCaptionsInSettings-1.png)
 
         3. Inside of this settings page is an option to toggle Live Captions from Off to On. Do not make this change yet, as there is one more way to enable the feature.
         4. <b>Close</b> the Settings app.
-    4. <b>Option 3: Use a key combo</b>
+    5. <b>Option 3: Use a key combo</b>
         1. Press <b>Windows key + Ctrl + L</b> to enable captions. (Do not just press Windows and L together, as this will lock your screen!)
         2. At the top of your screen, you will be presented with the option to enable live captions with translation. 
         
-        !IMAGE[Exercise11-LiveCaptionsWithTranslationPrompt.png](instructions310362/Exercise11-LiveCaptionsWithTranslationPrompt.png){500}
+        ![Live Captions with Translation Prompt](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise11-LiveCaptionsWithTranslationPrompt.png)
 
         3. Press the <b>Yes, continue</b> option 
         4. Live Captions with Translation are now enabled. By default, it enables to English (United States). Click the English (United States) drop-down to see the options for Chinese (Simplified, Mainland China) and Chinese (Traditional, Hong Kong SAR). Select the language option that you are most comfortable with before proceeding.
@@ -719,7 +714,7 @@ All live captions with translation processing occurs locally. The audio, voice d
         6. You will now be asked to download the language file to show captions. Press <b>Yes, continue</b> to proceed with the download.
         7. Wait a few moments for Live Captions to be configured.
 
-	>[!IMPORTANT] If Live Captions with Translation crashes, please see the "Manually Install English Translation Model" section below and then return to this step.
+	>Important! If Live Captions with Translation crashes, please see the "Manually Install English Translation Model" section below and then return to this step.
 
     3. Ensure you have the <b>sound turned on</b> on your lab PC with sound coming through the speakers. Live Captions with Translation works by processing the sound that is being played through the speakers.
     4. Open File Explorer and navigate to <b>C:\LAB583\Exercise11-Translation</b> and launch the file <b>LiveCaption.mp4</b>. If the video begins to auto-play, pause it.
@@ -742,11 +737,10 @@ In the event that Live Captions with Translation crashes, you should be able to 
 3. <b>Double-click</b> the file <b>cd222ccc12254d1cb566849d38ec826a.msix</b>
 4. A po-up window will appear asking if you want to install the model. Click <b>Install</b>.
 
-!IMAGE[Exercise11-InstallSpeechTranslationPack.png](instructions310362/Exercise11-InstallSpeechTranslationPack.png){400}
+![Install Speech Translation Pack](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise11-InstallSpeechTranslationPack.png)
 
 5. Once the install is complete, return to the steps above to start Live Captions with Translation and complete this lab exercise.
-
-===
+ 
 # Exercise Twelve: Configure Windows Studio Effects
 
 <b>Objective</b>: Learn how to turn on and use Windows Studio Effects
@@ -763,7 +757,7 @@ There are two ways an end user can interact with Windows Studio Effects and in t
 2. The quick settings menu launches
 3. Within the quick settings menu, click the <b>Studio Effects</b> option
 
-!IMAGE[Exercise12-StudioEffects.png](instructions310362/Exercise12-StudioEffects.png){300}
+![Studio Effects](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise12-StudioEffects.png)
 
 4. The first six Windows Studio Effects settings will appear. 
     1. <i>Portrait Light</i> applies a more natural lighting appearance to your face
@@ -776,7 +770,7 @@ There are two ways an end user can interact with Windows Studio Effects and in t
     8. Experiment with the different settings available by clicking on each to enable them. The camera preview will show you the results of enabling/disabling each Studio Effect.
 5. You can scroll to the next Studio Effects settings by scrolling down with your mouse scroll, or clicking the downward triangle on the right-hand side of the Quick Settings.
 
-!IMAGE[Exercise12-ScrollDownQuickSettings.png](instructions310362/Exercise12-ScrollDownQuickSettings.png){300}
+![Scroll Down in Quick Settings](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise12-ScrollDownQuickSettings.png)
 
 6. The final three Windows Studio Effects settings will appear
     1. <i>Eye Contact: Standard</i> provides a subtle correction for a user who is looking down from the camera to the screen. It does not adjust the left or right movement of the eyes.
@@ -792,22 +786,21 @@ Users can also access Studio Effects through the Windows Settings app.
 2. In the left-hand menu, select <b>Bluetooth & devices</b>
 3. Locate the <i>Cameras</i> option in the <i>Bluetooth & devices</i> page, and then click <b>Cameras</b>
 
-!IMAGE[Exercise12-BluetoothDevicesPage.png](instructions310362/Exercise12-BluetoothDevicesPage.png){500}
+![Bluetooth Devices Page in Settings](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise12-BluetoothDevicesPage.png)
 
 4. The list of cameras should include a front-facing connected camera as shown in this image. <b>Click</b> the front-facing connected camera to open its settings.
 
-!IMAGE[Exercise12-ConnectedCameras.png](instructions310362/Exercise12-ConnectedCameras.png){500}
+![Connected Cameras in Settings](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise12-ConnectedCameras.png)
 
 5. The list of Windows Studio Effects will appear just below the camera preview.
 
-!IMAGE[Exercise12-StudioEffectsInSettings.png](instructions310362/Exercise12-StudioEffectsInSettings.png){500}
+![Studio Effects in the Settings app](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise12-StudioEffectsInSettings.png)
 
 6. In the Settings app, it is easier to see which options are mutually exclusive - for instance, you can either apply Standard blur or Portrait blur, but not both.
 
 7. Experiment with turning different Studio Effects on and off to see how the camera is affected.
 
 
-===
 # Exercise Thirteen: Putting Copilot+ PC AI Features Together
 
 So far in this hands on lab, you have had the opportunity to use AI features indepdendently on a Copilot+ PC. This exercise starts with a scenario and builds on it using the AI tools available. This exercise will generally lack screenshots, as we want you to experiment with the tools and the outcomes - and your outcomes could greatly vary from those around you!
@@ -851,20 +844,20 @@ f you cannot remember how to use specific AI features in Paint, revisit Exercise
 1. Use <i>Cocreator</i> in Paint with the prompt +++an office floor plan with wireless access points highlighted+++ (or experiment with alternate prompts)
 2. Begin sketching a rough office layout and Paint will cocreate with you. An example is shown below
 
-!IMAGE[Exercise13-Cocreator.png](instructions310362/Exercise13-Cocreator.png){500}
+![Cocreator Office Floor Plan Example](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise13-Cocreator.png)
 
 3. After adding some walls and openings, click <b>+Apply</b> to apply the Cocreated image
 4. Tip: AI often has issues with generating text an image, so remove any bad/grabled text with solid boxes in Paint.
 5. Use the <i>Sticker generator</i> to build a sticker for a wireless access point 
 
-!IMAGE[Exercise13-WirelessAccessPointSticker.png](instructions310362/Exercise13-WirelessAccessPointSticker.png){200}
+![Wireless Access Point Sticker Example](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise13-WirelessAccessPointSticker.png)
 
 6. Drop some Wireless Access Point stickers onto your floor plan
 7. You are now a network engineer! (Just kidding...)
 
 <i>Bonus exercise</i>: 
 
-A fun, retro way to build a sample floor plan is to use the <i>Image Creator</i> feature with the prompt +++draw an example office floor plan with wireless access points+++ and select Pixel Art as the style. Generate some images and bask in the glory of the 90's.
+A fun, retro way to build a sample floor plan is to use the <i>Image Creator</i> feature with the prompt <b>draw an example office floor plan with wireless access points</b> and select Pixel Art as the style. Generate some images and bask in the glory of the 90's.
 
 ### Enable Studio Effects for Collaboration Call
 
@@ -897,18 +890,16 @@ The end user guide will need a screenshot of the <b>Network & internet > Wi-Fi >
 1. Launch Snipping tool to take a screenshot of the entire Wi-Fi Settings page, including the name and email address of the logged on user in the upper left corner.
 2. With the image open in Snipping Tool, click on the "Text actions" option in the menu bar 
 
-!IMAGE[Exercise13-TextActionsButton.png](instructions310362/Exercise13-TextActionsButton.png){400}
+![Text Actions Button](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise13-TextActionsButton.png)
 
 3. The third Text action option is Quick redact, which is set to redact email addresses and phone numbers. Click <b>Quick Redact</b> and a bar should appear over the email address of the logged on user. 
 
-!IMAGE[Exercise13-QuickRedact.png](instructions310362/Exercise13-QuickRedact.png){300}
+![Quick Redact in Snipping Tool](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise13-QuickRedact.png)
 
 4. Use the Quick redact drop down menu to <b>Remove all redactions</b> and restore the image to its original state. 
 
-===
 # Completion
 
----
 <br>
 ## <b>Thank you</b> for participating in our hands-on lab here at Ignite 2025.
 
