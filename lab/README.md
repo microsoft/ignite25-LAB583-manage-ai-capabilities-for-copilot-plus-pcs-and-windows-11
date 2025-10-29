@@ -727,6 +727,7 @@ All live captions with translation processing occurs locally. The audio, voice d
         2. You can also adjust the style by selecting <b>Preferences > Caption Style</b>. This will launch the Settings app where you can change the style to white on black, yellow on blue, or even edit it for a custom background color / font color that best suits you! You can adjust your fonts, the size, and opacity too!
 
 <br>
+
 ### Manually Install English Translation Model (Only If Necessary)
 
 If everything is configured correctly, your lab PC will be able to install and configure the language model to support translation. 
@@ -902,10 +903,10 @@ The end user guide will need a screenshot of the <b>Network & internet > Wi-Fi >
 # Completion
 
 <br>
-## <b>Thank you</b> for participating in our hands-on lab here at Ignite 2025.
+<b>Thank you</b> for participating in our hands-on lab here at Ignite 2025.
 
 <br>
-## Please remember to provide <b>feedback</b> about this session.
+Please remember to provide <b>feedback</b> about this session.
 
 <br>
 
